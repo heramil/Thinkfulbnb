@@ -41,6 +41,11 @@
   text-decoration: none
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 480px) {
   .nav {
     display: flex;
