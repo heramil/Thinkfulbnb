@@ -10,40 +10,44 @@
 <body>
 
   <nav class="nav">
-    <div class="nav-title">Thinkfulbnb</div>
+    <div class="nav-title"><h1>Thinkfulbnb</h1></div>
     <div class="nav-links">
       <ul>
-        <li>Stay</li>
-        <li>About</li>
-        <li>Ideas</li>
-        <li>Host</li>
+        <a href="#stay"><li>Stay</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#ideas"><li>Ideas</li></a>
+        <a href="#host"><li>Host</li></a>
       </ul>
     </div>
   </nav>
 
-  <section class="section">
+  <section id="stay" class="section">
 
     <div class="section-verbiage">Find the perfect vacation rental</div>
     <div class="section-reservation">
       <form>
         <div class="location-container">
           <label>Location</label>
-          <input class="location" type="text" placeholder="Search destination"></input>
+          <input class="location" type="text" placeholder="Search destination">
         </div>
         <div class="arrive-container">
           <label>Arrive</label>
-          <input class="arrive" type="date" placeholder="Search destination"></input>
+          <input class="arrive" type="date" placeholder="Search destination">
         </div>
         <div class="depart-container">
           <label>Depart</label>
-          <input class="depart" type="date" placeholder="Search destination"></input>
+          <input class="depart" type="date" placeholder="Search destination">
         </div>
         <div class="type-container">
           <label>Type</label>
           <select class="type" id="shelter" name="shelter">
             <option value="apartment">Apartment</option>
-            <option value="condo">Condo</option>
-            <option value="house">House</option>
+            <option value="condo">Barn</option>
+            <option value="house">Castle</option>
+            <option value="house">Houseboat</option>
+            <option value="house">Tiny House</option>
+            <option value="house">Yacht</option>
+            <option value="house">Yurt</option>
           </select>
         </div>
       </form>
@@ -53,7 +57,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-title">About</div>
     <div class="about-container">
       <div class="about-pool">
@@ -72,7 +76,7 @@
     </div >  
   </section>
 
-  <section class="ideas">
+  <section id="ideas" class="ideas">
     <div class="ideas-title">Ideas</div>
     <div class="ideas-container">
       <div class="forest-container">
@@ -94,7 +98,7 @@
     </div>
   </section>
 
-  <section class="subscribe">
+  <section id="host" class="subscribe">
     <div class="subscribe-title">
       Want to Become a Thinkfulbnb Host?
     </div>
@@ -130,6 +134,6 @@
   <footer>
     <p>© Thinkful</p>
   </footer>
-  
+
 </body>
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
@@ -14,9 +15,10 @@
   flex-direction: column;
 }
 
-.nav-title {
-  font-family: 'Pangolin', Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+.nav-title h1 {
+  font-family: 'Pangolin', cursive;
+  font-size: 3rem;
+  font-weight: 400;
   text-align: center;
   padding: 1rem 0;
 }
@@ -44,10 +46,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .nav-title {
-    font-size: 2rem;
   }
 
   .nav-links {
@@ -136,6 +134,8 @@
   color: white;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  cursor: pointer;
+  border: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -244,7 +244,7 @@
 
 .ideas-title {
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.25rem 0;
   font-size: 3rem;
   padding-top: 2rem;
 }
@@ -257,11 +257,10 @@
 
 .forest-container {
   width: 100%;
-  padding-bottom: 2rem;
 }
 
 .forest-container h1 {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 2rem;
 }
 
@@ -271,11 +270,10 @@
 
 .beaches-container {
   width: 100%;
-  padding-bottom: 2rem;
 }
 
 .beaches-container h1 {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 2rem;
 }
 
@@ -285,11 +283,10 @@
 
 .rusticCabins-container {
   width: 100%;
-  padding-bottom: 2rem;
 }
 
 .rusticCabins-container h1 {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 2rem;
 }
 
@@ -299,11 +296,10 @@
 
 .petFriendly-container {
   width: 100%;
-  padding-bottom: 2rem;
 }
 
 .petFriendly-container h1 {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 2rem;
 }
 
@@ -318,19 +314,19 @@
   }
 
   .forest-container {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .beaches-container {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .rusticCabins-container {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .petFriendly-container {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
