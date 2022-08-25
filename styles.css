@@ -66,6 +66,10 @@
 
 }
 
+.section {
+  margin-bottom: 2rem;
+}
+
 .section-verbiage {
   text-align: center;
   padding: 1rem 0;
@@ -75,85 +79,75 @@
 
 .section-reservation {
   border: 2px solid #ff385d;
-  margin: 2rem;
 }
 
+/* Fix the mobile aspect ratio for 480px
 
+/* 1. Location */
 .location-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  padding: 1rem;
 }
 
 .location {
-  border: 1px solid #767676;
-  border-radius: 2px;
+  width: 50%;
 }
 
-
+/* 2. Arrive */
 .arrive-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  padding: 1rem;
 }
 
 .arrive {
-  border: 1px solid #767676;
-  border-radius: 2px;
+  width: 50%;
 }
 
+/* 3. Depart */
 .depart-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  padding: 1rem;
 }
 
 .depart {
-  border: 1px solid #767676;
-  border-radius: 2px;
+  width: 50%;
 }
 
+/* 4. Type */
 .type-container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  padding: 1rem;
 }
 
 .type {
-  border: 1px solid #767676;
-  border-radius: 2px;
+  width: 50%;
 }
 
+/* 5. Button */
+
 .button-container {
-  margin: 1rem;
+  padding: 1rem
 }
 
 .button {
+  margin: 0 auto;
   width: 100%;
-  padding: 1rem;
   background-color: #ff385d;
   color: white;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
   border: none;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
-  
+@media screen and (min-width: 480px) {
+
   form {
     display: flex;
-    width: 100%;
-    justify-content: space-between
-  }
-
-  .section-reservation {
-    display: flex;
-    
+    justify-content: space-between;
   }
 
   .location-container {
@@ -161,9 +155,17 @@
     flex-direction: column;
   }
 
+  .location {
+    width: 100%;
+  }
+
   .arrive-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .arrive {
+    width: 100%;
   }
 
   .depart-container {
@@ -171,16 +173,27 @@
     flex-direction: column;
   }
 
+  .depart {
+    width: 100%;
+  }
+
   .type-container {
     display: flex;
     flex-direction: column;
   }
-  
-  .button-container {
-    display: flex;
+
+  .type {
+    width: 100%;
   }
 
+  .button {
+    width: 100%;
+    cursor: pointer;
+  }
 }
+
+
+
 
 .about {
   background-color: #00a699;
@@ -215,7 +228,7 @@
   font-size: 1.15rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 480px) {
   .about-container {
     display: flex;
     flex-direction: row;
@@ -312,7 +325,7 @@
   max-width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 480px) {
   .ideas-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -362,7 +375,7 @@
   padding: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 480px) {
   .subscribe-container {
     display: flex;
   }
