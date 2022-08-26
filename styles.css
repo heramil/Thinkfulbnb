@@ -81,6 +81,10 @@
   border: 2px solid #ff385d;
 }
 
+form {
+  width: 100%;
+  
+}
 /* Fix the mobile aspect ratio for 480px
 
 /* 1. Location */
@@ -92,6 +96,7 @@
 
 .location {
   width: 50%;
+  border: 1px solid black;
 }
 
 /* 2. Arrive */
@@ -102,7 +107,8 @@
 }
 
 .arrive {
-  width: 50%;
+  width: 50%!important;
+  border: 1px solid black;
 }
 
 /* 3. Depart */
@@ -113,7 +119,8 @@
 }
 
 .depart {
-  width: 50%;
+  width: 50%!important;
+  border: 1px solid black;
 }
 
 /* 4. Type */
@@ -125,15 +132,18 @@
 
 .type {
   width: 50%;
+  border: 1px solid black;
 }
 
 /* 5. Button */
 
 .button-container {
-  padding: 1rem
+  padding: 1rem;
+  display: block;
 }
 
 .button {
+  display: block;
   margin: 0 auto;
   width: 100%;
   background-color: #ff385d;
@@ -148,6 +158,7 @@
   form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .location-container {
@@ -187,8 +198,8 @@
   }
 
   .button {
-    width: 100%;
     cursor: pointer;
+    position: relative;
   }
 }
 
@@ -356,10 +367,36 @@
 .subscribe-title {
   text-align: center;
   font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.subscribe-container {
+  display: flex;
+}
+
+.subscribe-verbiage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  width: 50%;
+}
+
+.subscribe-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.subscribe-image {
+  width: 50%;
 }
 
 .subscribe-verbiage p {
-  padding: 2rem 1rem 1rem 1rem  ;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .subscribe-verbiage .unordered li {
@@ -375,9 +412,13 @@
   padding: 2rem;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .subscribe-container {
-    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe-verbiage {
+    width: 100%;
   }
 }
 
