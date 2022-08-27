@@ -253,7 +253,7 @@ form {
   }
 
   .pool {
-    width: 100%;
+    max-width: 100%;
   }
 
   .about-basement {
@@ -262,12 +262,13 @@ form {
   }
 
   .basement {
-    width: 100%;
+    max-width: 100%;
   }
 
   .about-verbiage {
     display: flex;
-    width: 25%;
+    max-width: 25%;
+    flex-wrap: wrap;
   }
 
 }
@@ -367,12 +368,13 @@ form {
 
 .subscribe-title {
   text-align: center;
-  font-size: 2rem;
-  padding-top: 2rem;
+  font-size: 1.25rem;
+  padding-top: 1rem;
 }
 
 .subscribe-container {
   display: flex;
+  width: 100%;
 }
 
 .subscribe-verbiage {
@@ -390,23 +392,18 @@ form {
   justify-content: center;
   align-items: center;
   width: 50%;
+  flex-wrap: wrap;
 }
 
-.subscribe-image {
-  width: 50%;
-}
 
 .subscribe-verbiage p {
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 .subscribe-verbiage .unordered li {
   list-style-type: circle;
 }
 
-.subscribe-image {
-  width: 100%;
-}
 
 .checkIn {
   max-width: 100%;
@@ -419,6 +416,10 @@ form {
   }
 
   .subscribe-verbiage {
+    width: 100%;
+  }
+
+  .subscribe-image {
     width: 100%;
   }
 }
